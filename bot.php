@@ -23,15 +23,23 @@ if (!is_null($events['events'])) {
 			if($text=='สวัสดี'){
 				$messages = [
 				'type' => 'text',
-				'text' => $text
+				'text' => 'สวัสดีครับ มีอะไรให้ฉันช่วย'
 				];	
-			}else{
+			}elseif($text=='คุณเป็นใคร'){
+				$messages = [
+				'type' => 'text',
+				'text' => 'ฉันชื่อ Paiwad ฉันเป็นบอท ฉันเป็นลูกของ Dev.paiwad'
+				];
+			}elseif($text=='กินข้าวรึยัง'){
+				$messages = [
+				'type' => 'text',
+				'text' => 'ฉันเป็นอท ฉันกินอะไรไม่ได้'
+				];
+			}
+			else{
 				$messages = [
 				'type' => 'text',
 				'text' => 'ไม่เข้าใจคำถาม'
-				$stickerID = 2;
-                   		$packageID = 1;
-                    		$replyData = new StickerMessageBuilder($packageID,$stickerID);
 				];
 			}
 			
