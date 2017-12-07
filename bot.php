@@ -20,20 +20,20 @@ if (!is_null($events['events'])) {
 			
 			
 			// Build message to reply back
-			if($text=='สวัสดี'){
+			if($text=='สวัสดี'||$text=='สวัสดีค่ะ'||$text=='สวัสดีครับ'){
 				$messages = [
 				'type' => 'text',
-				'text' => 'สวัสดีครับ มีอะไรให้ฉันช่วย'
+				'text' => 'สวัสดีครับ คุณกินข้าวรึยังนุ้งฝน'
 				];	
-			}elseif($text=='คุณเป็นใคร'){
+			}elseif($text=='กินแล้ว'){
 				$messages = [
 				'type' => 'text',
-				'text' => 'ฉันชื่อ Paiwad ฉันเป็นบอท ฉันเป็นลูกของ Dev.paiwad'
+				'text' => 'ดีใจด้วย คุณจะได้อ้วงๆ '
 				];
-			}elseif($text=='กินข้าวรึยัง'){
+			}elseif($text=='ตลก'){
 				$messages = [
 				'type' => 'text',
-				'text' => 'ฉันเป็นอท ฉันกินอะไรไม่ได้'
+				'text' => 'พ่องงง'
 				];
 			}
 			else{
