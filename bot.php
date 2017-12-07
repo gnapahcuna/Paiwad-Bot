@@ -16,6 +16,9 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			//test
+			
+			
 			// Build message to reply back
 			if($text=='สวัสดี'){
 				$messages = [
@@ -26,6 +29,9 @@ if (!is_null($events['events'])) {
 				$messages = [
 				'type' => 'text',
 				'text' => 'ไม่เข้าใจคำถาม'
+				$stickerID = 2;
+                   		$packageID = 1;
+                    		$replyData = new StickerMessageBuilder($packageID,$stickerID);
 				];
 			}
 			
